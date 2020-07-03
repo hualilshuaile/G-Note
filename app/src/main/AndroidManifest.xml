@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.g_note"
+    tools:ignore="ExtraText">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"
+        tools:targetApi="eclair" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="GNote"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent101835475" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name=".Paper.CalligraphyPaper"></activity>
+        <activity android:name=".Paper.WritingPaper" />
+        <activity android:name=".Paper.EnglishPaper" />
+        <activity android:name=".Paper.GridPaper" />
+        <activity android:name=".Paper.LinePaper" />
+        <activity android:name=".Paper.BlankPaper"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".ui.smart_pen.Ble" />
+        <activity android:name=".ui.account.Shareqq" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".PhoneMessageLogin" />
+        <activity android:name=".ThirdPartyLogin" />
+        <activity
+            android:name=".FastBrowse"
+            android:label="@string/title_activity_fast_browse"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

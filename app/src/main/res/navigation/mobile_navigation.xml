@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_brand_new">
+
+
+    <fragment
+        android:id="@+id/navigation_brand_new"
+        android:name="com.example.g_note.ui.brand_new.BrandNewFragment"
+        android:label="最新"
+        tools:layout="@layout/fragment_brand_new" />
+
+    <fragment
+        android:id="@+id/navigation_micro_lesson"
+        android:name="com.example.g_note.ui.micro_lesson.MicroLessonFragment"
+        android:label="微课"
+        tools:layout="@layout/fragment_micro_lesson" />
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.g_note.ui.add.AddFragment"
+        android:label="添加"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/navigation_smart_pen"
+        android:name="com.example.g_note.ui.smart_pen.SmartPenFragment"
+        android:label="智能笔"
+        tools:layout="@layout/fragment_smart_pen" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.g_note.ui.account.AccountFragment"
+        android:label="我"
+        tools:layout="@layout/fragment_account" />
+
+</navigation>

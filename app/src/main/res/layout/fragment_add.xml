@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+    <TextView
+        android:id="@+id/text_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="笔记模板"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.055"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空白"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/BlankPaper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/LinePaper" />
+
+    <ImageButton
+        android:id="@+id/BlankPaper"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/blank_paper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/LinePaper"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="横线"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/LinePaper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/LinePaper"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/line_paper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="方格"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/GridPaper"
+        app:layout_constraintLeft_toRightOf="@+id/LinePaper"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/GridPaper"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/grid_paper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/LinePaper"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="英语"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/EnglishPaper"
+        app:layout_constraintTop_toBottomOf="@+id/BlankPaper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/WritingPaper"/>
+
+    <ImageButton
+        android:id="@+id/EnglishPaper"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/english_paper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/WritingPaper"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作文"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/WritingPaper"
+        app:layout_constraintTop_toBottomOf="@+id/LinePaper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/WritingPaper"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/writing_paper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="练字"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/CalligraphyPaper"
+        app:layout_constraintLeft_toRightOf="@+id/WritingPaper"
+        app:layout_constraintTop_toBottomOf="@+id/GridPaper"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/CalligraphyPaper"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/calligraphy_paper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/WritingPaper"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

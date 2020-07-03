@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+    <TextView
+        android:id="@+id/text_smart_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_pen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.055"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开智能笔开关，保证指示灯闪烁"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_smart_pen"
+        app:layout_constraintBottom_toTopOf="@id/Pen"/>
+
+
+    <ImageView
+        android:id="@+id/Pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <Button
+        android:id="@+id/PairStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="开始配对"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#609FFF"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintWidth_percent="0.7"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

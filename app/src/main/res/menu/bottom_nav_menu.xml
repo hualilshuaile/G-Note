@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_brand_new"
+        android:icon="@drawable/brand_new"
+        android:title="@string/brand_new"/>
+
+    <item
+        android:id="@+id/navigation_micro_lesson"
+        android:icon="@drawable/micro_lesson"
+        android:title="@string/micro_lesson"/>
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/add"
+        android:title="@string/add"/>
+
+    <item
+        android:id="@+id/navigation_smart_pen"
+        android:icon="@drawable/smart_pen"
+        android:title="@string/smart_pen"/>
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/account"
+        android:title="@string/account"/>
+
+
+</menu>
